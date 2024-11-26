@@ -43,6 +43,11 @@ form.addEventListener("submit", (e) => {
     const confirmation = confirm("Do you want to proceed with the signup?");
     if (confirmation) {
       alert("Successful signup!");
+      emailInput.value = "";
+      passwordInput.value = "";
+      successMessage.textContent = "";
+      emailError.textContent = "";
+      passwordError.textContent = "";
     } else {
       emailInput.value = "";
       passwordInput.value = "";
